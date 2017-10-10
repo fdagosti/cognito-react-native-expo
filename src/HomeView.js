@@ -1,6 +1,6 @@
 import React from "react";
 import {ListView, StyleSheet, Text, TouchableHighlight, View} from "react-native";
-import FAIcon from "react-native-vector-icons/FontAwesome";
+import {FontAwesome} from "@expo/vector-icons";
 
 class HomeView extends React.Component {
 
@@ -14,11 +14,11 @@ class HomeView extends React.Component {
                                         onPress={() => {
                                             navigation.state.params.burger()
                                         }}>
-                        <FAIcon name={'bars'} size={20}/>
+                        <FontAwesome name={'bars'} size={20}/>
                     </TouchableHighlight>
                 ),
                 drawerIcon: ({tintColor, focused}) => (
-                    <FAIcon name={'list'} size={20} color={tintColor}/>
+                    <FontAwesome name={'list'} size={20} color={tintColor}/>
                 )
             }
         )

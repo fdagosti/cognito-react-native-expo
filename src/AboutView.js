@@ -2,14 +2,14 @@ import React from 'react';
 import {Image, Text, View} from 'react-native';
 import { Card, Button } from "react-native-elements";
 import utils from './utils';
-import FAIcon from 'react-native-vector-icons/FontAwesome';
+import {FontAwesome} from '@expo/vector-icons';
 
 class AboutView extends React.Component {
 
     static navigationOptions = ({ navigation }) => {
         return ({
             drawerIcon: ({ tintColor, focused }) => (
-                <FAIcon name={'info'} size={20} color={tintColor}/>
+                <FontAwesome name={'info'} size={20} color={tintColor}/>
             )
         })
     };

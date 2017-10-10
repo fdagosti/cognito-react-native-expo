@@ -1,6 +1,6 @@
 import React from 'react';
 import SignInView from './SignInView';
-import FAIcon from 'react-native-vector-icons/FontAwesome';
+import {FontAwesome} from "@expo/vector-icons";
 import * as utils from "../utils";
 
 class SignOutView extends SignInView {
@@ -8,7 +8,7 @@ class SignOutView extends SignInView {
     static navigationOptions = ({ navigation }) => {
         return ({
             drawerIcon: ({ tintColor, focused }) => (
-                <FAIcon name={'sign-out'} size={20} color={tintColor}/>
+                <FontAwesome name={'sign-out'} size={20} color={tintColor}/>
             )
         })
     };

@@ -4,7 +4,7 @@ import { DrawerNavigator, DrawerItems } from 'react-navigation';
 import createRootNavigator from './MainNavStack';
 import AboutView from './AboutView';
 import SignOutView from './authentication/SignOutView';
-import FAIcon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from '@expo/vector-icons';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
