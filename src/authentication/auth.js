@@ -9,8 +9,8 @@ import {
 } from "../../lib/aws-cognito-identity/index";
 
 const AWS_COGNITO = {
-    UserPoolId: '', //Enter your User Pool Id here
-    ClientId: '' //Enter your Client Id here
+    UserPoolId: 'eu-west-2_8CQQBEbe2', //Enter your User Pool Id here
+    ClientId: '56gi9lisrumr64s9ve1lusnrjs' //Enter your Client Id here
 };
 
 export const onSignIn = (userName, password, callback) => {
