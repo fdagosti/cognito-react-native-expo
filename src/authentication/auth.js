@@ -1,6 +1,7 @@
 import {AsyncStorage} from "react-native";
 import {util} from "aws-sdk/dist/aws-sdk-react-native";
 import utils from "../utils";
+import awsmobile from "../../aws-exports"
 import {
     AuthenticationDetails,
     CognitoUser,
@@ -9,8 +10,8 @@ import {
 } from "../../lib/aws-cognito-identity/index";
 
 const AWS_COGNITO = {
-    UserPoolId: 'eu-west-2_8CQQBEbe2', //Enter your User Pool Id here
-    ClientId: '56gi9lisrumr64s9ve1lusnrjs' //Enter your Client Id here
+    UserPoolId: awsmobile.aws_user_pools_id, //Enter your User Pool Id here
+    ClientId: awsmobile.aws_user_pools_web_client_id //Enter your Client Id here
 };
 
 export const onSignIn = (userName, password, callback) => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import SignInView from './SignInView';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
+import * as utils from "../utils";
 
 class SignOutView extends SignInView {
 
@@ -13,8 +14,10 @@ class SignOutView extends SignInView {
     };
 
     constructor(props) {
-        props.signout = true;
         super(props)
+        utils.removeEmailUserID(() => {
+            console.log('user credentials cleared');
+        });
     }
 }
 

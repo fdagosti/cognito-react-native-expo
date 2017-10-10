@@ -2,6 +2,7 @@ import Expo from 'expo';
 import React from 'react';
 import createDrawer from './src/Drawer';
 import {isSignedIn} from './src/authentication/auth';
+import './ReactotronConfig'
 
 class App extends React.Component {
 

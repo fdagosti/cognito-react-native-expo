@@ -37,6 +37,7 @@ aws_user_settings : 'enable',
 }
 
 export default awsmobile;
-var AWS = require('aws-sdk');
-AWS.config.region = awsmobile.aws_project_region;
-AWS.config.update({customUserAgent: 'MobileHub v0.1'});
+
+//var AWS = require('aws-sdk');
+//AWS.config.region = awsmobile.aws_project_region;
+//AWS.config.update({customUserAgent: 'MobileHub v0.1'});

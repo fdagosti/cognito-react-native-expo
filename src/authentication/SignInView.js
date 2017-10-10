@@ -15,6 +15,9 @@ class SignInView extends React.Component {
 
     constructor(props) {
         super(props);
+
+        console.log("Sign in view ", props)
+
         this.state = {
             email: props.navigation.state.params ? props.navigation.state.params : '',
             emailValidationError: '',
